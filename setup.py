@@ -10,7 +10,7 @@ setup(name='tab-ddpm',
         'Paper': 'https://arxiv.org/abs/2209.15421',
         'Code': 'https://github.com/yandex-research/tab-ddpm'
       },
-      packages=find_packages(where="tab_ddpm") + find_packages(where="scripts"),
+      packages=find_packages(include=['tab_ddpm*', 'scripts*', 'lib*']),
       package_dir={"tab_ddpm": "tab_ddpm","scripts": "scripts"},
       uploader='Michael-Brukson'
      )
