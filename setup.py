@@ -11,6 +11,11 @@ setup(name='tab-ddpm',
         'Code': 'https://github.com/yandex-research/tab-ddpm'
       },
       packages=find_packages(include=['tab_ddpm*', 'scripts*', 'lib*']),
-      package_dir={"tab_ddpm": "tab_ddpm","scripts": "scripts"},
+      package_dir={
+        'tab_ddpm': '.',
+        'tab_ddpm.tab_ddpm': 'tab_ddpm',
+        'tab_ddpm.scripts': 'scripts',
+        'tab_ddpm.lib': 'lib',
+        },
       uploader='Michael-Brukson'
      )
